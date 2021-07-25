@@ -23,6 +23,7 @@ namespace BettingAPI
             services.AddControllers();
             services.AddDbContext<BettingDbContext>();
             services.AddScoped<Seeder>();
+            services.AddAutoMapper(this.GetType().Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
